@@ -202,5 +202,26 @@
 // }
 
 
-// 5.
+// 5. main Stonewt.h Stonewt.cpp
+// #include "Stonewt.h"
+// #include <iostream>
+
+// int main() {
+//     using namespace std;
+//     Stonewt s1(666.66);
+//     Stonewt s2(3, 56.7);
+//     Stonewt s3;
+//     cout << "s1: " << s1 << endl;
+//     cout << "s2: " << s2 << endl;
+//     cout << "s3: " << s3 << endl;
+//     s2.set_mode(Stonewt::STN);
+//     cout << "s2 change mode: " << s2 << endl;
+//     cout << "s1+s2: " << s1 + s2 << endl;
+//     cout << "s1-s2: " << s1 - s2 << endl;
+//     cout << "10*s1: " << 10 * s1 << endl;
+//     return 0;
+// }
+
+
+// 6. main Stonewt_2.h/cpp
 
