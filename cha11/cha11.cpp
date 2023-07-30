@@ -224,4 +224,33 @@
 
 
 // 6. main Stonewt_2.h/cpp
+// #include <iostream>
+// #include "Stonewt_2.h"
 
+// int main() {
+//     using namespace std;
+//     Stonewt arr[6] = {(1000), (2000), (3000)};
+//     for (int i = 3; i < 6; ++i) {
+//         double Val;
+//         cout << "enter pounds val: ";
+//         cin >> Val;
+//         arr[i] = Stonewt(Val);
+//     }
+
+//     Stonewt stand(11, 0);
+//     Stonewt mn = arr[0];
+//     Stonewt mx = arr[0];
+//     int cnt_maxOrequ11 = 0;
+//     for (int i = 0; i < 6; ++i) {
+//         mn = arr[i] > mn ? mn : arr[i];
+//         mx = arr[i] < mx ? mx : arr[i];
+//         if (arr[i] >= stand) 
+//             cnt_maxOrequ11 ++;
+//     }
+
+//     cout << "max and min are: " << endl;
+//     mx.show_stn();
+//     mn.show_stn();
+//     cout << "lagger or equ to 11: " << cnt_maxOrequ11 << endl;
+//     return 0;
+// }
