@@ -3,14 +3,14 @@
  * Stonewt Stonewt::operator*(double k) const {      
  *      return Stonewt(st * k + lb * k / 14, lb * k % 14);
  * }
- * 2. 友元函数在类外定义，但是可以访问类成员
+ * 2. 友元函数在类外定义，但是可以访问类成员，友元函数不能隐式的访问调用对象的成员，需要将成员运算符作为参数进行传递
  * 3. 不是。非成员函数可以访问类内的公有类成员
  * 4. friend Stonewt operator*(const Stonewt & temp, double k) const {
  *      return temp * k;
  * }
- * 5. == 哪些运算符不能重载？==
- * 6. 重载这些运算符只能用类成员函数吗？
- * 7. operator double(Vector & temp) {
+ * 5. == 哪些运算符不能重载？== sizeof . .* :: ?:
+ * 6. 重载这些运算符只能用类成员函数吗？是的
+ * 7. friend operator double(Vector & temp) {
  *      return temp.length;
  * }
 */
@@ -252,5 +252,29 @@
 //     mx.show_stn();
 //     mn.show_stn();
 //     cout << "lagger or equ to 11: " << cnt_maxOrequ11 << endl;
+//     return 0;
+// }
+
+
+// 7. main complex0.h/cpp
+// #include <iostream>
+// using namespace std;
+// #include "complex0.h"
+
+// int main() {
+//     complex a(3.0, 4.0);
+//     complex c;
+//     cout << "Enter a complex number (q to quit):\n";
+//     while (cin >> c) {
+//         cout << "c is " << c << "\n";
+//         cout << "complex conjugate is " << ~c << "\n";
+//         cout << "a is " << a << '\n';
+//         cout << "a + c is " << a + c << '\n';
+//         cout << "a - c is " << a - c << '\n';
+//         cout << "a * c is " << a * c << '\n';
+//         cout << "2 * c is " << 2 * c << '\n';
+//         cout << "Enter a complex number (q to quit):\n";
+//     }
+//     cout << "Done.\n";
 //     return 0;
 // }
